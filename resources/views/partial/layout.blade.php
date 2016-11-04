@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="/css/theme/blue.css">
     <link rel="stylesheet" type="text/css" href="/css/theme/red.css">
     <link rel="stylesheet" type="text/css" href="/css/theme/yellow.css">
+    <link rel="stylesheet" type="text/css" href="/css/jquery-ui-1.10.4.custom.min.css">
 
 
 </head>
@@ -42,6 +43,8 @@
     <script type="text/javascript" src="/js/vendor.js"></script>
     <script type="text/javascript" src="/js/app.js"></script>
     <script type="text/javascript" src="/js/custom.js"></script>
+    <script type="text/javascript" src="/js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui-1.10.4.custom.min.js"></script>
 
 </body>
 </html>

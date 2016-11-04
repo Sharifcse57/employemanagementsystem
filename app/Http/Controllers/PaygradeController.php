@@ -17,13 +17,13 @@ class PaygradeController extends Controller
 
     public function create()
     {
-        //
+        return view('registration.register');
     }
 
 
     public function store(Request $request)
     {
-        //
+
     }
 
 
