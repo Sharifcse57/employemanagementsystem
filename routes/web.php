@@ -19,4 +19,4 @@ Route::get('/', function () {
 Route::resource('designation', 'DesignationController');
 Route::resource('payitem', 'PayitemController');
 Route::resource('paygrade', 'PaygradeController');
-Route::resource('register', 'EmployeeController');
+Route::resource('employee', 'EmployeeController');

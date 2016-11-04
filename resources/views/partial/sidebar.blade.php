@@ -7,10 +7,13 @@
                 <i class="fa fa-times"></i>
             </button>
         </div>
+
         <div class="sidebar-menu">
+
             <ul class="sidebar-nav">
                 <li class="active">
-                    <a href="./index.html">
+
+                    <a href="/employee">
                         <div class="icon">
                             <i class="fa fa-tasks" aria-hidden="true"></i>
                         </div>
@@ -18,7 +21,7 @@
                     </a>
                 </li>
                 <li class="@@menu.messaging">
-                    <a href="./messaging.html">
+                    <a href="/designation">
                         <div class="icon">
                             <i class="fa fa-tasks" aria-hidden="true"></i>
                         </div>
@@ -82,7 +85,8 @@
                             <li><a href="/designation/create">Add designation</a> </li>
                             <li><a href="/payitem/create">Add Payitems</a></li>
                             <li><a href="/paygrade">Paygrades</a></li>
-                            <li><a href="/register">Register Employee</a></li>
+                            <li><a href="/employee/create">Register Employee</a></li>
+                            <li><a href="/employee">Register Employee</a></li>
 
                         </ul>
                     </div>

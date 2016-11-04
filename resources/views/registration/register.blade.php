@@ -89,12 +89,13 @@
                             <div class="input-group">
                                  <span class="input-group-addon" id="basic-addon1">
                                  <i class="glyphicon glyphicon-calendar" aria-hidden="true"></i></span>
-                                 <input type='text'name="date" class="form-control"  id='datepicker' placeholder="Joindate"/>
+                                 <input type='date'name="date" class="form-control"  placeholder="Joindate"/>
                                  </div>
                                  <div class="text-center">
-                                 {{--<input type="submit" class="btn btn-success btn-submit" value="Register">--}}
-                                 <button type="submit" class="btn btn-primary">Save</button>
-                            </div>
+
+                                     <button type="submit" class="btn btn-success btn-submit"> Register</button>
+                                 </div>
+
                         </form>
 
 
@@ -109,10 +110,9 @@
 </div>
 
 <script type="text/javascript" src="/js/vendor.js"></script>
-<script type="text/javascript" src="/js/app.js"></script>
-<script type="text/javascript" src="/js/custom.js"></script>
 <script type="text/javascript" src="/js/jquery-1.10.2.js"></script>
 <script type="text/javascript" src="/js/jquery-ui-1.10.4.custom.min.js"></script>
-
+<script type="text/javascript" src="/js/app.js"></script>
+<script type="text/javascript" src="/js/custom.js"></script>
 </body>
 </html>

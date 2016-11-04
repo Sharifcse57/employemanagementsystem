@@ -11,3 +11,6 @@ $(document).ready(function(){
 $( function() {
     $( "#datepicker" ).datepicker();
 } );
+$( function() {
+    $( "#menu" ).menu();
+} );

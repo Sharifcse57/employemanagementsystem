@@ -5,21 +5,30 @@ use App\Employee as Employee;
 use App\Designation as Designation;
 use App\Paygrade as Paygrade;
 use Illuminate\Http\Request;
+use DB;
 
 class EmployeeController extends Controller
 {
 
     public function index()
     {
-        $designation=Designation::all();
-        $paygrade=Paygrade::all();
-        return view("registration.register",['designation'=> $designation,'paygrade'=> $paygrade]);
+        $employee = Employee::orderBy('id', 'DESC')->get();
+//        $employee=Employee::all();
+//        $employee->orderBy('id', 'DESC');
+//        $employee = DB::table('employees')->get()
+//
+//        ->orderBy('employees.id','ASC');
+
+
+        return view("registration.table",['employee'=> $employee]);
     }
 
 
     public function create()
     {
-        //
+        $designation=Designation::all();
+        $paygrade=Paygrade::all();
+        return view("registration.employee",['designation'=> $designation,'paygrade'=> $paygrade]);
     }
 
 
@@ -34,10 +43,12 @@ class EmployeeController extends Controller
         $employee->email= $request->email;
         $employee->paygrade_id= $request->paygrade;
         $employee->joindate= $request->date;
+        $employee->active=0;
 
 
         $employee->save();
-        return redirect('/registration')->with('status', 'User inserted!');
+        return redirect('/employee')->with('status', 'employee inserted!');
+
     }
 
 

@@ -72,3 +72,9 @@ aside.app-sidebar .sidebar-header {
 aside.app-sidebar .sidebar-menu ul.sidebar-nav > li > a {
     padding: 0rem 0;
 }
+.ui-menu { width: 150px; }
+
+.customapp{
+    margin-left: 16px;
+    margin-right: 16px;
+}
