@@ -1,7 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Employee;
 use App\Payitem as Payitem;
+use DB;
 use Illuminate\Http\Request;
 
 class PayitemController extends Controller
@@ -27,12 +29,6 @@ class PayitemController extends Controller
         return view('payitems.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
         $item=new Payitem();
@@ -43,48 +39,34 @@ class PayitemController extends Controller
 
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function show($id)
     {
-        //
+
+
+    }
+      public function modal($id)
+    {
+         // return view("payitems.modal",['id'=>$id]);
+        dd($id);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function edit($id)
     {
-        //
+        $payitem=Payitem::find($id);
+        return view("payitems.edit",['payitem'=>$payitem]);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, $id)
     {
-        //
+        $payitem=Payitem::find($id);
+        $payitem->payitem= $request->name;
+        $payitem->save();
+        return redirect('/payitem')->with('status', 'Payitem updated!');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function destroy($id)
     {
-        //
+        Payitem::destroy($id);
+        return redirect('/payitem')->with('status', 'payitem item deleted!');
     }
 }

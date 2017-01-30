@@ -1,5 +1,4 @@
 @section("navbar")
-
         <nav class="navbar navbar-default" id="navbar">
             <div class="container-fluid">
                 <div class="navbar-collapse collapse in">
@@ -10,7 +9,7 @@
                             </button>
                         </li>
                         <li class="logo">
-                            <a class="navbar-brand" href="#"><span class="highlight">Flat v3</span> Admin</a>
+                            <a class="navbar-brand" href="#"><span class="highlight">employee admin</span> Admin</a>
                         </li>
                         <li>
                             <button type="button" class="navbar-toggle">
@@ -20,10 +19,7 @@
                     </ul>
                     <ul class="nav navbar-nav navbar-left">
                         <li class="navbar-title">Employee management system</li>
-                        <li class="navbar-search hidden-sm">
-                            <input id="search" type="text" placeholder="Search..">
-                            <button class="btn-search"><i class="fa fa-search"></i></button>
-                        </li>
+                       
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
 
@@ -35,28 +31,16 @@
                                 <div class="title">Profile</div>
                             </a>
                             <div class="dropdown-menu">
-                                <div class="profile-info">
-                                    <h4 class="username">Scott White</h4>
-                                </div>
+                                
                                 <ul class="action">
-                                    <li>
+                                    <!-- <li>
                                         <a href="#">
                                             Profile
                                         </a>
-                                    </li>
+                                    </li> -->
+
                                     <li>
-                                        <a href="#">
-                                            <span class="badge badge-danger pull-right">5</span>
-                                            My Inbox
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            Setting
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
+                                        <a href="/logout-admin">
                                             Logout
                                         </a>
                                     </li>

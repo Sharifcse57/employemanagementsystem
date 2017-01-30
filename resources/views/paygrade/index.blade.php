@@ -1,5 +1,6 @@
 
 @extends('partial.layout')
+@extends('partial.header')
 @extends('partial.sidebar')
 @extends('partial.navbar')
 @extends('partial.footer')
@@ -9,11 +10,11 @@
     <div class="col-md-12">
       <div class="card">
         <div class="card-header">
-          Employee designation names
+          Paygrade wise basic salary information
         </div>
         <div class="card-body">
           <div class="row">
-            <div class="col-md-12">
+            <div class="col-lg-12">
               @if (session('status'))
                 <div class="alert alert-success">
                   {{ session('status') }}
@@ -22,36 +23,29 @@
                 <table class="table">
                   <thead>
                   <tr>
-                    <th>Id</th>
                     <th>Paygrade Name</th>
-
+                    <th>Basic Salary</th>
+                    <th>Action</th>
                   </tr>
                   </thead>
                   <tbody>
+                  @if (!empty($paygrade))
                   @foreach ($paygrade as $paygrade)
-
-
                   <tr>
-
-                    <td>{{ $paygrade->id }}</td>
                     <td>{{ $paygrade->paygrade_name }}</td>
-                     <td>
-
-                       <form action="/designation/{{$paygrade->id}}" method="post" >
-                         {{ csrf_field() }}
-                         <input type="hidden" name="_method" value="delete">
-                         <a href="/designation/{{$paygrade->id}}/edit"  class="btn btn-default" >
+                    <td>{{ $paygrade->basic }}</td>
+                    <td> 
+                    <a href="/paygrade/{{$paygrade->id}}/edit"  class="btn btn-info" >
                            <span class="glyphicon glyphicon-edit"></span>
-                         </a>
-                         <button type="submit" class="btn btn-default" name="button"> <span class="glyphicon  glyphicon-trash"></span></button>
-                       </form>
-
+                     </a>
+                     <a href="/paygrade/{{$paygrade->id}}/deactive"  class="btn btn-danger">Deactive</a>
+                     </td>
+                     <td>
                     </td>
-
-
                   </tr>
                   @endforeach
                   </tbody>
+                  @endif
                 </table>
             </div>
           </div>

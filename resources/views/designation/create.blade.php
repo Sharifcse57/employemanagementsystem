@@ -1,5 +1,6 @@
 
 @extends('partial.layout')
+@extends('partial.header')
 @extends('partial.sidebar')
 @extends('partial.navbar')
 @extends('partial.footer')

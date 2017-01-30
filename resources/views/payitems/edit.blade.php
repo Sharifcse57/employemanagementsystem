@@ -1,5 +1,6 @@
 
 @extends('partial.layout')
+@extends('partial.header')
 @extends('partial.sidebar')
 @extends('partial.navbar')
 @extends('partial.footer')
@@ -9,15 +10,15 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    Basic Elements
+                    
                 </div>
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-6">
-                            <label class="switch">
+                           <!--  <label class="switch">
                                 <input type="checkbox">
                                 <div class="slider round dog-button"></div>
-                            </label>
+                            </label> -->
 
                             <table class="table" id="dog" style="display: none;">
                                 <thead>
@@ -51,14 +52,14 @@
                             {{--<div id="cat" style="display: none;">aaaaaaaaaaa</div>--}}
 
 
-                            <form action="/designation/{{$desig->id}}" method="post">
+                            <form action="/payitem/{{$payitem->id}}" method="post">
                             <input type="hidden" name="_method" value="put">
-                                <input type="text" value="{{$desig->designation}}" name="name" class="form-control" placeholder="Enter designation">
+                                <input type="text" value="{{$payitem->payitem}}" name="name" class="form-control" placeholder="Enter Payitem">
 
                                 {{ csrf_field() }}
 
 
-                                <button type="submit" class="btn btn-primary">Save</button>
+                                <button type="submit" class="btn btn-success">Save</button>
                                 {{--<button type="button" class="btn btn-default">Cancel</button>--}}
 
 

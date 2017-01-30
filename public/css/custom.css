@@ -1,4 +1,8 @@
+body{
+   font-family:  "Times New Roman", Times, serif;
+   font-size: 20px;
 
+}
 .navbar {
     margin-bottom: 0px;
 }
@@ -67,7 +71,7 @@ aside.app-sidebar .sidebar-header {
 }
 
 .navbar .navbar-collapse .navbar-nav > li.navbar-search input {
-    margin-left:400px;
+    margin-left:387px;
 }
 aside.app-sidebar .sidebar-menu ul.sidebar-nav > li > a {
     padding: 0rem 0;
@@ -78,3 +82,160 @@ aside.app-sidebar .sidebar-menu ul.sidebar-nav > li > a {
     margin-left: 16px;
     margin-right: 16px;
 }
+
+.btn{
+  
+        padding: 9px 24px;
+}
+
+.shadow{
+ 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.shadowfull{
+   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+    margin: 32px;
+}
+hr.style1{
+    border-top: 1px solid #8c8b8b;
+}
+
+.list ul{
+    list-style: none;
+}
+.app-containerr{
+    padding: 0px;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    padding-left: 1px;
+} 
+
+
+.payimage{
+    width:300px; 
+    margin-top: 25px;
+    border-radius: 32px;
+    margin-left: 86px;
+}
+
+.item {
+    width:300px; 
+    margin-top: 25px;
+    border-radius: 32px;
+    margin-left: 86px;
+}
+.item img {
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 42px; 
+}
+.item:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+/*payment dropdown*/
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.cards {
+  width: 100%;
+  background-color: #FFF;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px #c8d1d3;
+  height: 1500px;
+   }
+.paymentdropdown{
+    float: right;
+    margin-right: 81px;
+    margin-top: 37px;
+
+}   
+
+
+/*calculator*/
+
+ .input{
+            height: 40px;
+     }
+    .button{
+      background: #0F1321;
+      color: white;
+      height: 30px;
+      width: 34px;
+    }
+    .operator{
+
+      background: #9A9ABC;
+      color: white;
+      height: 30px;
+      width: 34px;
+    }
+    .cancel{
+
+      background:red;
+      color: white;
+      height: 30px;
+      width: 34px;
+    }
+    .button:hover {
+    background-color: #C6C5CB;
+    }
+    .trbody{
+
+    }
+.paymentempname{
+  margin-left: 91px;
+}
+
+.ui-datepicker 
+   {
+     font-size: 50px;
+    }

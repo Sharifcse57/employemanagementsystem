@@ -1,4 +1,3 @@
-
 @section("sidebar")
     <aside class="app-sidebar" id="sidebar">
         <div class="sidebar-header">
@@ -7,94 +6,108 @@
                 <i class="fa fa-times"></i>
             </button>
         </div>
-
         <div class="sidebar-menu">
-
             <ul class="sidebar-nav">
-                <li class="active">
-
-                    <a href="/employee">
+               
+                    
+                 <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <div class="icon">
-                            <i class="fa fa-tasks" aria-hidden="true"></i>
+                            <i class="fa fa-user" aria-hidden="true"></i>
                         </div>
-                        <div class="title">Employee Info</div>
+                        <div class="title">Employee info</div>
                     </a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="/register">Current Employees</a> </li>
+                            <li><a href="/deactivate">Deactive Employees</a></li>
+                        </ul>
+                    </div>
                 </li>
-                <li class="@@menu.messaging">
-                    <a href="/designation">
+
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <div class="icon">
-                            <i class="fa fa-tasks" aria-hidden="true"></i>
+                            <i class="fa fa-cog" aria-hidden="true"></i>
                         </div>
                         <div class="title">Designation info</div>
                     </a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="/designation">Designation Details</a> </li>
+                        </ul>
+                    </div>
                 </li>
-                <li class="dropdown ">
+
+                <li class="dropdown active">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <div class="icon">
-                            <i class="fa fa-tasks" aria-hidden="true"></i>
+                            <i class="fa fa-pie-chart" aria-hidden="true"></i>
+                        </div>
+                        <div class="title">Paygrade info</div>
+                    </a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="/paygrade">Current paygrades</a> </li>
+                            <li><a href="/deactivepaygrade">Deactivated Paygrades</a></li>
+                            <li><a href="/paygrade/create">Add Paygrade</a></li>
+                            <li><a href="/payitem">Manage Payitems</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <div class="icon">
+                            <i class="fa fa-money" aria-hidden="true"></i>
                         </div>
                         <div class="title">Salary info</div>
                     </a>
                     <div class="dropdown-menu">
                         <ul>
-                            <li class="section"><i class="fa fa-file-o" aria-hidden="true"></i> UI Kits</li>
-                            <li><a href="./uikits/customize.html">Customize</a></li>
-
+                            <li><a href="/salaryshow">Salary Management</a> </li>
+                            <!-- <li><a href="/payment/create">Payment</a></li> -->
+                            <!-- <li><a href="/invoice">invoice</a></li> -->
                         </ul>
                     </div>
                 </li>
-                <li class="dropdown">
+
+                <li class="dropdown active">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <div class="icon">
-                            <i class="fa fa-tasks" aria-hidden="true"></i>
+                            <i class="fa fa-users" aria-hidden="true"></i>
                         </div>
-                        <div class="title">Payment info</div>
+                        <div class="title">Payment</div>
                     </a>
                     <div class="dropdown-menu">
                         <ul>
-                            <li><a href="/designation/create">Add designation</a> </li>
-                            <li><a href="/payitem/create">Add Payitems</a></li>
-
+                            <li><a href="/payment/create">Payment management</a></li>
                         </ul>
                     </div>
                 </li>
-                <li class="dropdown">
+
+                <li class="dropdown active">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <div class="icon">
-                            <i class="fa fa-tasks" aria-hidden="true"></i>
+                            <i class="fa fa-users" aria-hidden="true"></i>
                         </div>
-                        <div class="title">Timesheet info</div>
+                        <div class="title">Leave info</div>
                     </a>
                     <div class="dropdown-menu">
                         <ul>
-                            <li><a href="/designation/create">Add designation</a> </li>
-                            <li><a href="/payitem/create">Add Payitems</a></li>
-
+                            <li><a href="/manageleave">Pending Leave Applications</a></li>
+                            <li><a href="/leavehistory">Leave history</a></li>
                         </ul>
                     </div>
                 </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <div class="icon">
-                            <i class="fa fa-tasks" aria-hidden="true"></i>
-                        </div>
-                        <div class="title">Settings</div>
-                    </a>
-                    <div class="dropdown-menu">
-                        <ul>
-                            <li><a href="/designation/create">Add designation</a> </li>
-                            <li><a href="/payitem/create">Add Payitems</a></li>
-                            <li><a href="/paygrade">Paygrades</a></li>
-                            <li><a href="/employee/create">Register Employee</a></li>
-                            <li><a href="/employee">Register Employee</a></li>
 
-                        </ul>
-                    </div>
-                </li>
+                
+
+                
 
             </ul>
         </div>
 
     </aside>
-
 @endsection

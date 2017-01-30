@@ -3,13 +3,14 @@
 namespace App\Http\Controllers;
 use App\Designation as Designation;
 use Illuminate\Http\Request;
-
+use DB;
 class DesignationController extends Controller
 {
   
     public function index()
     {
-        $designations=Designation::all();
+       
+        $designations = DB::table('designations')->get();
         return view("designation.index",['designation'=> $designations ]);
     }
 
@@ -23,23 +24,20 @@ class DesignationController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'name' => 'required|max:20',
+            'name' => 'required|max:100',
 
         ]);
+
         $des=new Designation();
         $des->designation= $request->name;
 
         $des->save();
-       return redirect('/designation')->with('status', 'designation inserted!');
-
-
-
-
+        return redirect('/designation')->with('status', 'designation inserted!');
     }
 
     function show($id)
     {
-        //
+    //
     }
 
   
@@ -59,12 +57,7 @@ class DesignationController extends Controller
         return redirect('/designation')->with('status', 'designation item updated!');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+    
     public function destroy($id)
     {
         Designation::destroy($id);

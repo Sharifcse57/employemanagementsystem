@@ -1,5 +1,6 @@
 
 @extends('partial.layout')
+@extends('partial.header')
 @extends('partial.sidebar')
 @extends('partial.navbar')
 @extends('partial.footer')
@@ -21,11 +22,17 @@
 
 
                             <button type="submit" class="btn btn-primary">Save</button>
+                            
+
+                             
+  
                             {{--<button type="button" class="btn btn-default">Cancel</button>--}}
 
 
 
                             </form>
+
+                            
                         </div>
                     </div>
                 </div>
@@ -34,7 +41,7 @@
     </div>
 
 
-
+                            
 
 
 
